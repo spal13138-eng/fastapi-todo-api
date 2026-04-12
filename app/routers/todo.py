@@ -45,8 +45,8 @@ def get_todo(db:Session=Depends(get_db),current_user:models.User=Depends(oauth2.
 #    
 #    return todo_query.first()
 
-@router.put("/{id}")
-def update_todo(id:int,update_todo:schemas.TodoUpdate,db:Session=Depends(get_db),current_user:int=Depends(oauth2.get_current_user)):
+@router.put("/")
+def update_todo(update_todo:schemas.TodoUpdate,db:Session=Depends(get_db),current_user:int=Depends(oauth2.get_current_user)):
     todo_query=db.query(models.Todo).filter(models.Todo.owner_id==current_user.id)
 
 
