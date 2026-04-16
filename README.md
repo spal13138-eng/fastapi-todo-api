@@ -1,3 +1,10 @@
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-ORM-red)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+
 # FastAPI Todo API with JWT Authentication
 
 A secure multi-user Todo API built using FastAPI. This project allows users to register, log in, and manage their own todos with JWT-based authentication and authorization.
